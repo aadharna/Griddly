@@ -39,11 +39,11 @@ if __name__ == '__main__':
     # yaml_path = 'Single-Player/Mini-Grid/minigrid-drunkdwarf.yaml'
     # yaml_path = 'Single-Player/Mini-Grid/minigrid-spiders.yaml'
     # yaml_path = 'Single-Player/GVGAI/spider-nest.yaml'
-    # yaml_path = ''Single-Player/GVGAI/clusters.yaml'
+    yaml_path = 'Single-Player/GVGAI/clusters.yaml'
     # yaml_path = ''Single-Player/GVGAI/sokoban2.yaml'
     # yaml_path = ''Single-Player/GVGAI/labyrinth_partially_observable.yaml'
 
-    yaml_path = 'zelda.yaml'
+    #yaml_path = 'zelda.yaml'
     level = 1
 
     wrapper.build_gym_from_yaml(environment_name, yaml_path,

@@ -100,4 +100,8 @@ uint32_t Action::getDelay() const {
   return delay_;
 }
 
+std::shared_ptr<Action> Action::clone(std::shared_ptr<Grid> grid) const {
+  return std::shared_ptr<Action>(new Action(grid, actionName_, delay_));
+}
+
 }  // namespace griddly

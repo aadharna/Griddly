@@ -59,6 +59,8 @@ class Action {
 
   virtual glm::ivec2 getOrientationVector() const;
 
+  virtual std::shared_ptr<Action> clone(std::shared_ptr<Grid> grid) const;
+
   // Delay an action
   virtual uint32_t getDelay() const;
 
